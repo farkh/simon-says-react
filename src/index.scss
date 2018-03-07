@@ -1,0 +1,85 @@
+$red: red;
+$blue: blue;
+$green: green;
+$yellow: yellow;
+
+.app {
+
+	&__header {
+		text-align: center;
+		margin-top: 20px;
+	}
+	&__game {
+		text-align: center;
+	}
+}
+
+.game {
+
+	&__round {
+		text-align: center;
+	}
+	&__level {
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+
+		h3 {
+			margin-right: 10px;
+		}
+	}
+	&__pad {
+		width: 400px;
+		height: 400px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__pad--active {
+		cursor: pointer;
+	}
+	&__activity-message {
+		min-height: 23px;
+	}
+	&__play {
+		margin-top: 20px;
+	}
+}
+
+.pad {
+
+	&__element {
+		width: 200px;
+		height: 200px;
+
+
+		&:first-child {
+			background: $red;
+
+			&.pad__element--lightened {
+				background: darken($red, 15%);
+			}
+		}
+		&:last-child {
+			background: $green;
+
+			&.pad__element--lightened {
+				background: darken($green, 15%);
+			}
+		}
+		&:nth-child(2) {
+			background: $blue;
+
+			&.pad__element--lightened {
+				background: darken($blue, 15%);
+			}
+		}
+		&:nth-child(3) {
+			background: $yellow;
+
+			&.pad__element--lightened {
+				background: darken($yellow, 15%);
+			}
+		}
+	}
+}
