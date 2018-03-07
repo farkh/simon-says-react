@@ -84,7 +84,7 @@ class Game extends Component {
 		this.deactivatePad();
 		this.setState({ 
 			round: this.state.round + 1, 
-			activityMessage: 'You won!',
+			activityMessage: 'Fine!',
 			playButtonText: 'Next round',
 			buttonDisabled: false
 		});
