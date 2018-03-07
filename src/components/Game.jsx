@@ -38,7 +38,7 @@ class Game extends Component {
 		});
 
 		setTimeout(
-			function() { 
+			function() {
 				ReactDOM.findDOMNode(this.refs.pad).addEventListener('click', this.handlePadClick);
 				this.activatePad();
 			}.bind(this),
